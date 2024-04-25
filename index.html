@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>pop-up</title>
+</head>
+
+<body>
+
+  <!-- warn - Нельзя оплатить. Услуги не подтверждены -->
+
+  <div class="popup-warn">
+    <div class="popup-warn__block">
+      <div class="popup-warn__descr">Туристические услуги на данный момент не подтверждены!
+        <span> Распечатать / оплатить счёт временно невозможно.</span>
+      </div>
+
+      <div class="popup-warn__descr">Как только статус услуги будет изменён —
+        доступ к счёту будет открыт.</div>
+    </div>
+
+    <button class="popup-warn__btn"> Понятно </button>
+  </div>
+
+  <!-- warn - Нельзя заключить договор. Услуги не подтверждены -->
+
+  <div class="popup-warn">
+    <div class="popup-warn__block">
+      <div class="popup-warn__descr">
+        <span> Извините за неудобство, но на данный момент договор на туруслуги заключить невозможно, так как в
+          вашем заказе не все услуги подтверждены системой бронирования.</span>
+      </div>
+
+      <div class="popup-warn__descr">Как только в заказе все услуги будут подтверждены — Вам придёт оповещение об
+        открытии доступа к процедуре онлайн оформления договора и оплате.</div>
+    </div>
+
+    <button class="popup-warn__btn"> Понятно </button>
+  </div>
+
+  <!-- warn - Не оформили договор -->
+
+  <div class="popup-warn">
+    <div class="popup-warn__block">
+      <div class="popup-warn__descr">
+        <span>Вы не оформили договор по данному заказу, поэтому распечатать счёт и оплатить услугу сейчас
+          невозможно.</span>
+      </div>
+
+      <div class="popup-warn__descr">Опция «Распечатать/оплатить счёт» будет доступна после онлайн оформления Вами
+        договора.</div>
+
+      <div class="popup-warn__descr">Пожалуйста, оформите договор. Приступить к процедуре оформления договора
+        можно <a href="#">здесь</a>
+      </div>
+
+      <div class="popup-warn__descr">Внимание! В случае если Ваша оплата не поступит до указанных в заказе даты и
+        времени на счёт компании — компания «Круизы&Путешествия» не гарантирует подтверждённых условий
+        бронирования, а Ваши условия отдыха по заказу могут быть автоматически аннулированы системой.</div>
+    </div>
+
+    <div class="descr-warn popup-warn__descr">Строго соблюдайте сроки оформления договора, дату и время оплаты,
+      указанные в вашем заказе!</div>
+
+    <button class="popup-warn__btn"> Понятно </button>
+  </div>
+
+  <!-- warn - Если не заполнены поля с * показываем popup а потом подсвечиваем border незаполненных полей красным -->
+
+  <div class="popup-warn">
+    <div class="popup-warn__block">
+      <div class="popup-warn__descr">Для продолжения процедуры заключения договора — заполните все поля отмеченные
+        звёздочкой (<div class="descr-warn">*</div>)</div>
+    </div>
+
+    <button class="popup-warn__btn"> Понятно </button>
+  </div>
+
+  <!-- warn - скидка -->
+
+  <div class="popup-discount">
+    <div class="popup-discount__descr">Применить скидку к данному заказу?</div>
+    <div class="popup-discount__btns">
+      <div class="popup-discount__btn">Применить</div>
+      <a class="popup-discount__link">Отмена</a>
+    </div>
+
+    <div class="popup-discount__block">
+      <div class="popup-discount__item">Это действие невозможно отменить!</div>
+      <div class="popup-discount__item">Внимание! В случае применения скидки, оплата
+        бонусными рублями не допускается!</div>
+    </div>
+  </div>
+
+  <!-- warn - бонус -->
+
+  <div class="popup-bonus">
+    <div class="popup-bonus__descr">Всего бонусных рублей: <span>8000</span>
+    </div>
+    <div class="popup-bonus__descr">Указать сумму бонусов для оплаты данного заказа</div>
+    <div class="popup-bonus__btn">Оплатить</div>
+
+    <div class="popup-bonus__block">
+      <div class="popup-bonus__item">Это действие невозможно отменить!</div>
+      <div class="popup-bonus__item">Внимание! В случае оплаты бонусными рублями,
+        скидка не применяется!</div>
+    </div>
+  </div>
+
+  <!-- warn - При клике по ссылке с расписанием или кнопке «посмотреть» -->
+
+  <div class="shedule-popup">
+    <div class="fixed_table">
+      <div class="head">
+        <table>
+          <thead>
+            <tr>
+              <th>День</th>
+              <th>Дата</th>
+              <th>Порт</th>
+              <th>Прибытие</th>
+              <th>Отправление</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+      <div class="body">
+        <table class="full_table">
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>01.07, пн</td>
+              <td>Лос-Анджелес, США</td>
+              <td>09:00</td>
+              <td>17:00</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>01.07, пн</td>
+              <td>Лос-Анджелес, США</td>
+              <td>09:00</td>
+              <td>17:00</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>01.07, пн</td>
+              <td>Лос-Анджелес, США</td>
+              <td></td>
+              <td>17:00</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>01.07, пн</td>
+              <td>Лос-Анджелес, США</td>
+              <td></td>
+              <td>17:00</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>01.07, пн</td>
+              <td>Лос-Анджелес, США</td>
+              <td></td>
+              <td>17:00</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>01.07, пн</td>
+              <td>Лос-Анджелес, США</td>
+              <td></td>
+              <td>17:00</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>01.07, пн</td>
+              <td>Лос-Анджелес, США</td>
+              <td></td>
+              <td>17:00</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>01.07, пн</td>
+              <td>Лос-Анджелес, США</td>
+              <td></td>
+              <td>17:00</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>01.07, пн</td>
+              <td>Лос-Анджелес, США</td>
+              <td></td>
+              <td>17:00</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>01.07, пн</td>
+              <td>Лос-Анджелес, США</td>
+              <td></td>
+              <td>17:00</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>01.07, пн</td>
+              <td>Лос-Анджелес, США</td>
+              <td></td>
+              <td>17:00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="shedule-popup__btn">Распечатать расписание</div>
+  </div>
+
+    <!-- warn - При клике по ссылке с расписанием или кнопке «посмотреть» -->
+
+    <div class="shedule-compare">
+      <div class="shedule-compare__list">
+         <div class="shedule-compare__item">
+              <div class="fixed_table">
+        <div class="head">
+          <table>
+            <thead>
+              <tr>
+                <th>Дата</th>
+                <th>Порт</th>
+                <th>Прибытие</th>
+                <th>Отправление</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+        <div class="body">
+          <table class="full_table">
+            <tbody>
+              <tr>
+              
+                <td>01.07, пн</td>
+                <td>Лос-Анджелес, США</td>
+                <td>09:00</td>
+                <td>17:00</td>
+              </tr>
+              <tr>
+               
+                <td>01.07, пн</td>
+                <td>Лос-Анджелес, США</td>
+                <td>09:00</td>
+                <td>17:00</td>
+              </tr>
+              <tr>
+             
+                <td>01.07, пн</td>
+                <td>Лос-Анджелес, США</td>
+                <td></td>
+                <td>17:00</td>
+              </tr>
+              <tr>
+               
+                <td>01.07, пн</td>
+                <td>Лос-Анджелес, США</td>
+                <td></td>
+                <td>17:00</td>
+              </tr>
+              <tr>
+               
+                <td>01.07, пн</td>
+                <td>Лос-Анджелес, США</td>
+                <td></td>
+                <td>17:00</td>
+              </tr>
+              <tr>
+               
+                <td>01.07, пн</td>
+                <td>Лос-Анджелес, США</td>
+                <td></td>
+                <td>17:00</td>
+              </tr>
+              <tr>
+               
+                <td>01.07, пн</td>
+                <td>Лос-Анджелес, США</td>
+                <td></td>
+                <td>17:00</td>
+              </tr>
+              <tr>
+                
+                <td>01.07, пн</td>
+                <td>Лос-Анджелес, США</td>
+                <td></td>
+                <td>17:00</td>
+              </tr>
+              <tr>
+              
+                <td>01.07, пн</td>
+                <td>Лос-Анджелес, США</td>
+                <td></td>
+                <td>17:00</td>
+              </tr>
+              <tr>
+              
+                <td>01.07, пн</td>
+                <td>Лос-Анджелес, США</td>
+                <td></td>
+                <td>17:00</td>
+              </tr>
+              <tr>
+             
+                <td>01.07, пн</td>
+                <td>Лос-Анджелес, США</td>
+                <td></td>
+                <td>17:00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+         </div>
+
+         <div class="shedule-compare__item">
+              <div class="fixed_table">
+        <div class="head">
+          <table>
+            <thead>
+              <tr>
+            
+                <th>Дата</th>
+                <th>Порт</th>
+                <th>Прибытие</th>
+                <th>Отправление</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+        <div class="body">
+          <table class="full_table">
+            <tbody>
+              <tr>
+             
+                <td>01.07, пн</td>
+                <td>Лос-Анджелес, США</td>
+                <td>09:00</td>
+                <td>17:00</td>
+              </tr>
+              <tr>
+              
+                <td>01.07, пн</td>
+                <td>Лос-Анджелес, США</td>
+                <td>09:00</td>
+                <td>17:00</td>
+              </tr>
+              <tr>
+             
+                <td>01.07, пн</td>
+                <td>Лос-Анджелес, США</td>
+                <td></td>
+                <td>17:00</td>
+              </tr>
+              <tr>
+               
+                <td>01.07, пн</td>
+                <td>Лос-Анджелес, США</td>
+                <td></td>
+                <td>17:00</td>
+              </tr>
+              <tr>
+              
+                <td>01.07, пн</td>
+                <td>Лос-Анджелес, США</td>
+                <td></td>
+                <td>17:00</td>
+              </tr>
+              <tr>
+          
+                <td>01.07, пн</td>
+                <td>Лос-Анджелес, США</td>
+                <td></td>
+                <td>17:00</td>
+              </tr>
+              <tr>
+                
+                <td>01.07, пн</td>
+                <td>Лос-Анджелес, США</td>
+                <td></td>
+                <td>17:00</td>
+              </tr>
+              <tr>
+               
+                <td>01.07, пн</td>
+                <td>Лос-Анджелес, США</td>
+                <td></td>
+                <td>17:00</td>
+              </tr>
+              <tr>
+              
+                <td>01.07, пн</td>
+                <td>Лос-Анджелес, США</td>
+                <td></td>
+                <td>17:00</td>
+              </tr>
+              <tr>
+                
+                <td>01.07, пн</td>
+                <td>Лос-Анджелес, США</td>
+                <td></td>
+                <td>17:00</td>
+              </tr>
+              <tr>
+               
+                <td>01.07, пн</td>
+                <td>Лос-Анджелес, США</td>
+                <td></td>
+                <td>17:00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+         </div>
+      </div>
+  
+      <div class="shedule-popup__btn">Распечатать расписание</div>
+    </div>
+</body>
+
+</html>
