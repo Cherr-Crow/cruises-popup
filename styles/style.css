@@ -599,7 +599,6 @@ body {
 .popup-hint__descr {
     color: #222;
     font-size: 14px;
-    box-shadow: 0 7px 11px rgb(8 0 47 / 7%), 0 3.5px 5px rgb(8 0 47 / 5%);
 }
 
 .popup-hint::after {
